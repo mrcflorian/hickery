@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		177D6EE31AD5F2D40002CC42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D6EE21AD5F2D40002CC42 /* AppDelegate.swift */; };
+		177D6EE51AD5F2D40002CC42 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D6EE41AD5F2D40002CC42 /* HomeScreenViewController.swift */; };
+		177D6EE71AD5F2D40002CC42 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D6EE61AD5F2D40002CC42 /* SecondViewController.swift */; };
+		177D6EEA1AD5F2D40002CC42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177D6EE81AD5F2D40002CC42 /* Main.storyboard */; };
+		177D6EEC1AD5F2D40002CC42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177D6EEB1AD5F2D40002CC42 /* Images.xcassets */; };
+		177D6EEF1AD5F2D40002CC42 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 177D6EED1AD5F2D40002CC42 /* LaunchScreen.xib */; };
+		177D6EFB1AD5F2D40002CC42 /* HickeryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D6EFA1AD5F2D40002CC42 /* HickeryTests.swift */; };
+		177D6F081AD5F3660002CC42 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D6F041AD5F3660002CC42 /* FBSDKCoreKit.framework */; };
+		177D6F091AD5F3660002CC42 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D6F041AD5F3660002CC42 /* FBSDKCoreKit.framework */; };
+		177D6F0A1AD5F3660002CC42 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D6F051AD5F3660002CC42 /* FBSDKLoginKit.framework */; };
+		177D6F0B1AD5F3660002CC42 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D6F051AD5F3660002CC42 /* FBSDKLoginKit.framework */; };
+		177D6F0C1AD5F3660002CC42 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D6F061AD5F3660002CC42 /* FBSDKMessengerShareKit.framework */; };
+		177D6F0D1AD5F3660002CC42 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D6F061AD5F3660002CC42 /* FBSDKMessengerShareKit.framework */; };
+		177D6F0E1AD5F3660002CC42 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D6F071AD5F3660002CC42 /* FBSDKShareKit.framework */; };
+		177D6F0F1AD5F3660002CC42 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D6F071AD5F3660002CC42 /* FBSDKShareKit.framework */; };
+		177D6F111AD5F37E0002CC42 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D6F101AD5F37E0002CC42 /* Bolts.framework */; };
+		177D6F121AD5F37E0002CC42 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D6F101AD5F37E0002CC42 /* Bolts.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		177D6EF51AD5F2D40002CC42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 177D6ED51AD5F2D40002CC42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 177D6EDC1AD5F2D40002CC42;
+			remoteInfo = Hickery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		177D6EDD1AD5F2D40002CC42 /* Hickery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hickery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		177D6EE11AD5F2D40002CC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177D6EE21AD5F2D40002CC42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		177D6EE41AD5F2D40002CC42 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		177D6EE61AD5F2D40002CC42 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		177D6EE91AD5F2D40002CC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		177D6EEB1AD5F2D40002CC42 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		177D6EEE1AD5F2D40002CC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		177D6EF41AD5F2D40002CC42 /* HickeryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HickeryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		177D6EF91AD5F2D40002CC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177D6EFA1AD5F2D40002CC42 /* HickeryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HickeryTests.swift; sourceTree = "<group>"; };
+		177D6F041AD5F3660002CC42 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		177D6F051AD5F3660002CC42 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		177D6F061AD5F3660002CC42 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		177D6F071AD5F3660002CC42 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		177D6F101AD5F37E0002CC42 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		177D6F141AD5F3CF0002CC42 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		177D6EDA1AD5F2D40002CC42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177D6F111AD5F37E0002CC42 /* Bolts.framework in Frameworks */,
+				177D6F0E1AD5F3660002CC42 /* FBSDKShareKit.framework in Frameworks */,
+				177D6F0A1AD5F3660002CC42 /* FBSDKLoginKit.framework in Frameworks */,
+				177D6F0C1AD5F3660002CC42 /* FBSDKMessengerShareKit.framework in Frameworks */,
+				177D6F081AD5F3660002CC42 /* FBSDKCoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177D6EF11AD5F2D40002CC42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177D6F121AD5F37E0002CC42 /* Bolts.framework in Frameworks */,
+				177D6F0F1AD5F3660002CC42 /* FBSDKShareKit.framework in Frameworks */,
+				177D6F0B1AD5F3660002CC42 /* FBSDKLoginKit.framework in Frameworks */,
+				177D6F0D1AD5F3660002CC42 /* FBSDKMessengerShareKit.framework in Frameworks */,
+				177D6F091AD5F3660002CC42 /* FBSDKCoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		177D6ED41AD5F2D40002CC42 = {
+			isa = PBXGroup;
+			children = (
+				177D6F101AD5F37E0002CC42 /* Bolts.framework */,
+				177D6F041AD5F3660002CC42 /* FBSDKCoreKit.framework */,
+				177D6F051AD5F3660002CC42 /* FBSDKLoginKit.framework */,
+				177D6F061AD5F3660002CC42 /* FBSDKMessengerShareKit.framework */,
+				177D6F071AD5F3660002CC42 /* FBSDKShareKit.framework */,
+				177D6EDF1AD5F2D40002CC42 /* Hickery */,
+				177D6EF71AD5F2D40002CC42 /* HickeryTests */,
+				177D6EDE1AD5F2D40002CC42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		177D6EDE1AD5F2D40002CC42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				177D6EDD1AD5F2D40002CC42 /* Hickery.app */,
+				177D6EF41AD5F2D40002CC42 /* HickeryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		177D6EDF1AD5F2D40002CC42 /* Hickery */ = {
+			isa = PBXGroup;
+			children = (
+				177D6EE21AD5F2D40002CC42 /* AppDelegate.swift */,
+				177D6EE41AD5F2D40002CC42 /* HomeScreenViewController.swift */,
+				177D6EE61AD5F2D40002CC42 /* SecondViewController.swift */,
+				177D6EE81AD5F2D40002CC42 /* Main.storyboard */,
+				177D6EEB1AD5F2D40002CC42 /* Images.xcassets */,
+				177D6EED1AD5F2D40002CC42 /* LaunchScreen.xib */,
+				177D6EE01AD5F2D40002CC42 /* Supporting Files */,
+				177D6F141AD5F3CF0002CC42 /* BridgingHeader.h */,
+			);
+			path = Hickery;
+			sourceTree = "<group>";
+		};
+		177D6EE01AD5F2D40002CC42 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				177D6EE11AD5F2D40002CC42 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		177D6EF71AD5F2D40002CC42 /* HickeryTests */ = {
+			isa = PBXGroup;
+			children = (
+				177D6EFA1AD5F2D40002CC42 /* HickeryTests.swift */,
+				177D6EF81AD5F2D40002CC42 /* Supporting Files */,
+			);
+			path = HickeryTests;
+			sourceTree = "<group>";
+		};
+		177D6EF81AD5F2D40002CC42 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				177D6EF91AD5F2D40002CC42 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		177D6EDC1AD5F2D40002CC42 /* Hickery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177D6EFE1AD5F2D40002CC42 /* Build configuration list for PBXNativeTarget "Hickery" */;
+			buildPhases = (
+				177D6ED91AD5F2D40002CC42 /* Sources */,
+				177D6EDA1AD5F2D40002CC42 /* Frameworks */,
+				177D6EDB1AD5F2D40002CC42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hickery;
+			productName = Hickery;
+			productReference = 177D6EDD1AD5F2D40002CC42 /* Hickery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		177D6EF31AD5F2D40002CC42 /* HickeryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177D6F011AD5F2D40002CC42 /* Build configuration list for PBXNativeTarget "HickeryTests" */;
+			buildPhases = (
+				177D6EF01AD5F2D40002CC42 /* Sources */,
+				177D6EF11AD5F2D40002CC42 /* Frameworks */,
+				177D6EF21AD5F2D40002CC42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				177D6EF61AD5F2D40002CC42 /* PBXTargetDependency */,
+			);
+			name = HickeryTests;
+			productName = HickeryTests;
+			productReference = 177D6EF41AD5F2D40002CC42 /* HickeryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		177D6ED51AD5F2D40002CC42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Florian Marcu";
+				TargetAttributes = {
+					177D6EDC1AD5F2D40002CC42 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					177D6EF31AD5F2D40002CC42 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 177D6EDC1AD5F2D40002CC42;
+					};
+				};
+			};
+			buildConfigurationList = 177D6ED81AD5F2D40002CC42 /* Build configuration list for PBXProject "Hickery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 177D6ED41AD5F2D40002CC42;
+			productRefGroup = 177D6EDE1AD5F2D40002CC42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				177D6EDC1AD5F2D40002CC42 /* Hickery */,
+				177D6EF31AD5F2D40002CC42 /* HickeryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		177D6EDB1AD5F2D40002CC42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177D6EEA1AD5F2D40002CC42 /* Main.storyboard in Resources */,
+				177D6EEF1AD5F2D40002CC42 /* LaunchScreen.xib in Resources */,
+				177D6EEC1AD5F2D40002CC42 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177D6EF21AD5F2D40002CC42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		177D6ED91AD5F2D40002CC42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177D6EE71AD5F2D40002CC42 /* SecondViewController.swift in Sources */,
+				177D6EE31AD5F2D40002CC42 /* AppDelegate.swift in Sources */,
+				177D6EE51AD5F2D40002CC42 /* HomeScreenViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177D6EF01AD5F2D40002CC42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177D6EFB1AD5F2D40002CC42 /* HickeryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		177D6EF61AD5F2D40002CC42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 177D6EDC1AD5F2D40002CC42 /* Hickery */;
+			targetProxy = 177D6EF51AD5F2D40002CC42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		177D6EE81AD5F2D40002CC42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				177D6EE91AD5F2D40002CC42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		177D6EED1AD5F2D40002CC42 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				177D6EEE1AD5F2D40002CC42 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		177D6EFC1AD5F2D40002CC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		177D6EFD1AD5F2D40002CC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		177D6EFF1AD5F2D40002CC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Hickery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Hickery/BridgingHeader.h;
+			};
+			name = Debug;
+		};
+		177D6F001AD5F2D40002CC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Hickery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Hickery/BridgingHeader.h;
+			};
+			name = Release;
+		};
+		177D6F021AD5F2D40002CC42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HickeryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hickery.app/Hickery";
+			};
+			name = Debug;
+		};
+		177D6F031AD5F2D40002CC42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = HickeryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hickery.app/Hickery";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		177D6ED81AD5F2D40002CC42 /* Build configuration list for PBXProject "Hickery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177D6EFC1AD5F2D40002CC42 /* Debug */,
+				177D6EFD1AD5F2D40002CC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177D6EFE1AD5F2D40002CC42 /* Build configuration list for PBXNativeTarget "Hickery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177D6EFF1AD5F2D40002CC42 /* Debug */,
+				177D6F001AD5F2D40002CC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		177D6F011AD5F2D40002CC42 /* Build configuration list for PBXNativeTarget "HickeryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177D6F021AD5F2D40002CC42 /* Debug */,
+				177D6F031AD5F2D40002CC42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 177D6ED51AD5F2D40002CC42 /* Project object */;
+}

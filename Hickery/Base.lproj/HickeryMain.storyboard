@@ -7,7 +7,7 @@
         <!--First-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="HomeScreenViewController" customModule="Hickery" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HickeryMainStoryBord" id="9pv-A4-QxB" customClass="HomeScreenViewController" customModule="Hickery" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -29,15 +29,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWN-F2-dwC">
-                                <rect key="frame" x="229" y="185" width="143" height="30"/>
-                                <state key="normal" title="Login with Facebook">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapLoginButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="AYh-RS-Zk8"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -45,8 +36,6 @@
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
-                            <constraint firstAttribute="centerY" secondItem="qWN-F2-dwC" secondAttribute="centerY" constant="100" id="g4i-5b-dCR"/>
-                            <constraint firstAttribute="centerX" secondItem="qWN-F2-dwC" secondAttribute="centerX" id="nI6-Se-cKB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>

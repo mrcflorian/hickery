@@ -6,62 +6,28 @@
 //  Copyright (c) 2015 Florian Marcu. All rights reserved.
 //
 
-import UIKit
+import NucleusFramework
 
-class HomeScreenViewController: UIViewController {
-
-    let permissions: [AnyObject] = ["email", "public_profile", "user_friends", "user_location"]
-
-    @IBAction func didTapLoginButton(sender: UIButton) {
-        FBSDKLoginManager().logInWithReadPermissions(permissions, handler: handleFacebookLoginResponse)
+class HomeScreenViewController: NLFNucleusViewController {
+    
+    override init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "didFetchFacebookUser:", name: kFacebookManagerDidFetchUserNotification, object: nil)
+        FacebookAPIManager.startFetchingDataForCurrentUser()
     }
     
-    func handleFacebookLoginResponse(result: FBSDKLoginManagerLoginResult!, error: NSError!)
+    deinit
     {
-        if error != nil {
-            self.handleFacebookLoginError(error)
-        } else if (result.isCancelled) {
-            self.handleFacebookLoginCancellation(result)
-        } else {
-            self.handleFacebookLoginSuccess(result);
-        }
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: kFacebookManagerDidFetchUserNotification, object: nil)
     }
     
-    func handleFacebookLoginError(error: NSError!)
+    func didFetchFacebookUser(notification: NSNotification)
     {
-    }
-    
-    func handleFacebookLoginCancellation(result: FBSDKLoginManagerLoginResult!)
-    {
-    }
-    
-    func handleFacebookLoginSuccess(result: FBSDKLoginManagerLoginResult!)
-    {
-        if result.grantedPermissions.containsObject("email") {
-            self.fetchData()
-        }
-    }
-    
-    func fetchData()
-    {
-        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
-        graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
-            
-            if ((error) != nil)
-            {
-                // Process error
-                println("Error: \(error)")
-            }
-            else
-            {
-                println("fetched user: \(result)")
-                let userName : NSString = result.valueForKey("name") as NSString
-                println("User Name is: \(userName)")
-                let userEmail : NSString = result.valueForKey("email") as NSString
-                println("User Email is: \(userEmail)")
-            }
+        HickeryAPI.requestUser(notification.object as String, completionHandler: { (user) -> Void in
+            HickeryAPI.requestLikes(user.userID, completionHandler: { (songsList) -> Void in
+                for song: HickerySong in songsList {
+                }
+            })
         })
     }
-
 }
-

@@ -10,7 +10,7 @@
 		177D6EE31AD5F2D40002CC42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D6EE21AD5F2D40002CC42 /* AppDelegate.swift */; };
 		177D6EE51AD5F2D40002CC42 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D6EE41AD5F2D40002CC42 /* HomeScreenViewController.swift */; };
 		177D6EE71AD5F2D40002CC42 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D6EE61AD5F2D40002CC42 /* SecondViewController.swift */; };
-		177D6EEA1AD5F2D40002CC42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177D6EE81AD5F2D40002CC42 /* Main.storyboard */; };
+		177D6EEA1AD5F2D40002CC42 /* HickeryMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177D6EE81AD5F2D40002CC42 /* HickeryMain.storyboard */; };
 		177D6EEC1AD5F2D40002CC42 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177D6EEB1AD5F2D40002CC42 /* Images.xcassets */; };
 		177D6EEF1AD5F2D40002CC42 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 177D6EED1AD5F2D40002CC42 /* LaunchScreen.xib */; };
 		177D6EFB1AD5F2D40002CC42 /* HickeryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D6EFA1AD5F2D40002CC42 /* HickeryTests.swift */; };
@@ -24,6 +24,12 @@
 		177D6F0F1AD5F3660002CC42 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D6F071AD5F3660002CC42 /* FBSDKShareKit.framework */; };
 		177D6F111AD5F37E0002CC42 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D6F101AD5F37E0002CC42 /* Bolts.framework */; };
 		177D6F121AD5F37E0002CC42 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177D6F101AD5F37E0002CC42 /* Bolts.framework */; };
+		17A02EE51AD9AAF600D13B2F /* HickeryLanding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A02EE41AD9AAF600D13B2F /* HickeryLanding.storyboard */; };
+		17A02F061AD9BE2800D13B2F /* HickeryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02F051AD9BE2800D13B2F /* HickeryAPI.swift */; };
+		17A02F091AD9BF1A00D13B2F /* HickerySong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02F081AD9BF1A00D13B2F /* HickerySong.swift */; };
+		17A02F0B1AD9C5EC00D13B2F /* LandingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02F0A1AD9C5EC00D13B2F /* LandingScreenViewController.swift */; };
+		17A02F0D1AD9CB3400D13B2F /* HickeryUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02F0C1AD9CB3400D13B2F /* HickeryUser.swift */; };
+		17A02F0F1AD9D10100D13B2F /* FacebookAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02F0E1AD9D10100D13B2F /* FacebookAPIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,20 @@
 			remoteGlobalIDString = 177D6EDC1AD5F2D40002CC42;
 			remoteInfo = Hickery;
 		};
+		17A02EF51AD9ABA800D13B2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17A02EF01AD9ABA800D13B2F /* NucleusFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 170BFA461AD5DBA800BFFEAC;
+			remoteInfo = NucleusFramework;
+		};
+		17A02EF71AD9ABA800D13B2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17A02EF01AD9ABA800D13B2F /* NucleusFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 170BFA511AD5DBA800BFFEAC;
+			remoteInfo = NucleusFrameworkTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +62,7 @@
 		177D6EE21AD5F2D40002CC42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		177D6EE41AD5F2D40002CC42 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		177D6EE61AD5F2D40002CC42 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		177D6EE91AD5F2D40002CC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		177D6EE91AD5F2D40002CC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HickeryMain.storyboard; sourceTree = "<group>"; };
 		177D6EEB1AD5F2D40002CC42 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		177D6EEE1AD5F2D40002CC42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		177D6EF41AD5F2D40002CC42 /* HickeryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HickeryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +74,13 @@
 		177D6F071AD5F3660002CC42 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		177D6F101AD5F37E0002CC42 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		177D6F141AD5F3CF0002CC42 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		17A02EE41AD9AAF600D13B2F /* HickeryLanding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HickeryLanding.storyboard; sourceTree = "<group>"; };
+		17A02EF01AD9ABA800D13B2F /* NucleusFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NucleusFramework.xcodeproj; path = ../Nucleus/NucleusFramework/NucleusFramework.xcodeproj; sourceTree = "<group>"; };
+		17A02F051AD9BE2800D13B2F /* HickeryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HickeryAPI.swift; sourceTree = "<group>"; };
+		17A02F081AD9BF1A00D13B2F /* HickerySong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HickerySong.swift; sourceTree = "<group>"; };
+		17A02F0A1AD9C5EC00D13B2F /* LandingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingScreenViewController.swift; sourceTree = "<group>"; };
+		17A02F0C1AD9CB3400D13B2F /* HickeryUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HickeryUser.swift; sourceTree = "<group>"; };
+		17A02F0E1AD9D10100D13B2F /* FacebookAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAPIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +114,7 @@
 		177D6ED41AD5F2D40002CC42 = {
 			isa = PBXGroup;
 			children = (
+				17A02EF01AD9ABA800D13B2F /* NucleusFramework.xcodeproj */,
 				177D6F101AD5F37E0002CC42 /* Bolts.framework */,
 				177D6F041AD5F3660002CC42 /* FBSDKCoreKit.framework */,
 				177D6F051AD5F3660002CC42 /* FBSDKLoginKit.framework */,
@@ -110,14 +138,17 @@
 		177D6EDF1AD5F2D40002CC42 /* Hickery */ = {
 			isa = PBXGroup;
 			children = (
+				17A02F041AD9BE0B00D13B2F /* HickeryPlatform */,
 				177D6EE21AD5F2D40002CC42 /* AppDelegate.swift */,
 				177D6EE41AD5F2D40002CC42 /* HomeScreenViewController.swift */,
 				177D6EE61AD5F2D40002CC42 /* SecondViewController.swift */,
-				177D6EE81AD5F2D40002CC42 /* Main.storyboard */,
+				177D6EE81AD5F2D40002CC42 /* HickeryMain.storyboard */,
 				177D6EEB1AD5F2D40002CC42 /* Images.xcassets */,
 				177D6EED1AD5F2D40002CC42 /* LaunchScreen.xib */,
 				177D6EE01AD5F2D40002CC42 /* Supporting Files */,
 				177D6F141AD5F3CF0002CC42 /* BridgingHeader.h */,
+				17A02EE41AD9AAF600D13B2F /* HickeryLanding.storyboard */,
+				17A02F0A1AD9C5EC00D13B2F /* LandingScreenViewController.swift */,
 			);
 			path = Hickery;
 			sourceTree = "<group>";
@@ -145,6 +176,34 @@
 				177D6EF91AD5F2D40002CC42 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17A02EF11AD9ABA800D13B2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17A02EF61AD9ABA800D13B2F /* NucleusFramework.framework */,
+				17A02EF81AD9ABA800D13B2F /* NucleusFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17A02F041AD9BE0B00D13B2F /* HickeryPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				17A02F071AD9BEBB00D13B2F /* Models */,
+				17A02F051AD9BE2800D13B2F /* HickeryAPI.swift */,
+				17A02F0E1AD9D10100D13B2F /* FacebookAPIManager.swift */,
+			);
+			name = HickeryPlatform;
+			sourceTree = "<group>";
+		};
+		17A02F071AD9BEBB00D13B2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				17A02F081AD9BF1A00D13B2F /* HickerySong.swift */,
+				17A02F0C1AD9CB3400D13B2F /* HickeryUser.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +273,12 @@
 			mainGroup = 177D6ED41AD5F2D40002CC42;
 			productRefGroup = 177D6EDE1AD5F2D40002CC42 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 17A02EF11AD9ABA800D13B2F /* Products */;
+					ProjectRef = 17A02EF01AD9ABA800D13B2F /* NucleusFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				177D6EDC1AD5F2D40002CC42 /* Hickery */,
@@ -222,13 +287,31 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		17A02EF61AD9ABA800D13B2F /* NucleusFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NucleusFramework.framework;
+			remoteRef = 17A02EF51AD9ABA800D13B2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		17A02EF81AD9ABA800D13B2F /* NucleusFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NucleusFrameworkTests.xctest;
+			remoteRef = 17A02EF71AD9ABA800D13B2F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		177D6EDB1AD5F2D40002CC42 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				177D6EEA1AD5F2D40002CC42 /* Main.storyboard in Resources */,
+				177D6EEA1AD5F2D40002CC42 /* HickeryMain.storyboard in Resources */,
 				177D6EEF1AD5F2D40002CC42 /* LaunchScreen.xib in Resources */,
+				17A02EE51AD9AAF600D13B2F /* HickeryLanding.storyboard in Resources */,
 				177D6EEC1AD5F2D40002CC42 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,7 +330,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A02F0B1AD9C5EC00D13B2F /* LandingScreenViewController.swift in Sources */,
+				17A02F0D1AD9CB3400D13B2F /* HickeryUser.swift in Sources */,
+				17A02F0F1AD9D10100D13B2F /* FacebookAPIManager.swift in Sources */,
+				17A02F061AD9BE2800D13B2F /* HickeryAPI.swift in Sources */,
 				177D6EE71AD5F2D40002CC42 /* SecondViewController.swift in Sources */,
+				17A02F091AD9BF1A00D13B2F /* HickerySong.swift in Sources */,
 				177D6EE31AD5F2D40002CC42 /* AppDelegate.swift in Sources */,
 				177D6EE51AD5F2D40002CC42 /* HomeScreenViewController.swift in Sources */,
 			);
@@ -272,12 +360,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		177D6EE81AD5F2D40002CC42 /* Main.storyboard */ = {
+		177D6EE81AD5F2D40002CC42 /* HickeryMain.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				177D6EE91AD5F2D40002CC42 /* Base */,
 			);
-			name = Main.storyboard;
+			name = HickeryMain.storyboard;
 			sourceTree = "<group>";
 		};
 		177D6EED1AD5F2D40002CC42 /* LaunchScreen.xib */ = {
@@ -457,6 +545,7 @@
 				177D6F001AD5F2D40002CC42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		177D6F011AD5F2D40002CC42 /* Build configuration list for PBXNativeTarget "HickeryTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +554,7 @@
 				177D6F031AD5F2D40002CC42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

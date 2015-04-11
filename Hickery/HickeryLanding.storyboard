@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sG1-A9-bur">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Landing Screen View Controller-->
+        <scene sceneID="Xbh-1E-gyp">
+            <objects>
+                <viewController id="sG1-A9-bur" customClass="LandingScreenViewController" customModule="Hickery" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="caV-sy-C1r"/>
+                        <viewControllerLayoutGuide type="bottom" id="HVA-Lj-SkD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qOU-Lr-0uP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eb-A9-S4V">
+                                <rect key="frame" x="228" y="225" width="143" height="30"/>
+                                <state key="normal" title="Login with Facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLoginButton:" destination="sG1-A9-bur" eventType="touchUpInside" id="zjl-Ju-DeY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="3eb-A9-S4V" secondAttribute="centerX" id="DSo-ig-rmq"/>
+                            <constraint firstAttribute="centerY" secondItem="3eb-A9-S4V" secondAttribute="centerY" constant="60" id="cyQ-xA-uHF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="facebookLoginButton" destination="cyQ-xA-uHF" id="JEl-nh-0pZ"/>
+                        <outlet property="view" destination="qOU-Lr-0uP" id="8dl-dg-9cW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rX5-OP-X1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="340"/>
+        </scene>
+    </scenes>
+</document>

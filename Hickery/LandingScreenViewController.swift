@@ -10,13 +10,10 @@ import NucleusFramework
 
 class LandingScreenViewController: NLFNucleusViewController
 {
-
-    let permissions: [AnyObject] = ["email", "public_profile", "user_friends", "user_location"]
-
     @IBOutlet var facebookLoginButton: NSLayoutConstraint!
 
     @IBAction func didTapLoginButton(sender: UIButton) {
-        FBSDKLoginManager().logInWithReadPermissions(permissions, handler: handleFacebookLoginResponse)
+        FBSDKLoginManager().logInWithReadPermissions(kFacebookManagerPermissions, handler: handleFacebookLoginResponse)
     }
 
     func handleFacebookLoginResponse(result: FBSDKLoginManagerLoginResult!, error: NSError!)

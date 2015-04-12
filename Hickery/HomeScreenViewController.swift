@@ -9,7 +9,11 @@
 import NucleusFramework
 
 class HomeScreenViewController: NLFNucleusViewController {
+
+    @IBOutlet var childrenContainerView: UIView!
     
+    var playlistVC: PlaylistViewController?
+
     override init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "didFetchFacebookUser:", name: kFacebookManagerDidFetchUserNotification, object: nil)
@@ -25,9 +29,15 @@ class HomeScreenViewController: NLFNucleusViewController {
     {
         HickeryAPI.requestUser(notification.object as String, completionHandler: { (user) -> Void in
             HickeryAPI.requestLikes(user.userID, completionHandler: { (songsList) -> Void in
-                for song: HickerySong in songsList {
+                if self.playlistVC != nil {
+                    self.playlistVC!.songs = songsList;
                 }
             })
         })
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "embedPlaylistVC") {
+            self.playlistVC = segue.destinationViewController as? PlaylistViewController
+        }
     }
 }

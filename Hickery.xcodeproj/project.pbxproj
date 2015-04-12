@@ -30,6 +30,9 @@
 		17A02F0B1AD9C5EC00D13B2F /* LandingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02F0A1AD9C5EC00D13B2F /* LandingScreenViewController.swift */; };
 		17A02F0D1AD9CB3400D13B2F /* HickeryUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02F0C1AD9CB3400D13B2F /* HickeryUser.swift */; };
 		17A02F0F1AD9D10100D13B2F /* FacebookAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02F0E1AD9D10100D13B2F /* FacebookAPIManager.swift */; };
+		17A02F111ADAA53600D13B2F /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02F101ADAA53600D13B2F /* PlaylistViewController.swift */; };
+		17A02F131ADAA67300D13B2F /* SongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02F121ADAA67300D13B2F /* SongTableViewController.swift */; };
+		17A02F151ADAA93A00D13B2F /* HickerySongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02F141ADAA93A00D13B2F /* HickerySongCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		17A02F0A1AD9C5EC00D13B2F /* LandingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingScreenViewController.swift; sourceTree = "<group>"; };
 		17A02F0C1AD9CB3400D13B2F /* HickeryUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HickeryUser.swift; sourceTree = "<group>"; };
 		17A02F0E1AD9D10100D13B2F /* FacebookAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookAPIManager.swift; sourceTree = "<group>"; };
+		17A02F101ADAA53600D13B2F /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		17A02F121ADAA67300D13B2F /* SongTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongTableViewController.swift; sourceTree = "<group>"; };
+		17A02F141ADAA93A00D13B2F /* HickerySongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HickerySongCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,9 @@
 				177D6F141AD5F3CF0002CC42 /* BridgingHeader.h */,
 				17A02EE41AD9AAF600D13B2F /* HickeryLanding.storyboard */,
 				17A02F0A1AD9C5EC00D13B2F /* LandingScreenViewController.swift */,
+				17A02F101ADAA53600D13B2F /* PlaylistViewController.swift */,
+				17A02F121ADAA67300D13B2F /* SongTableViewController.swift */,
+				17A02F141ADAA93A00D13B2F /* HickerySongCell.swift */,
 			);
 			path = Hickery;
 			sourceTree = "<group>";
@@ -330,11 +339,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A02F131ADAA67300D13B2F /* SongTableViewController.swift in Sources */,
 				17A02F0B1AD9C5EC00D13B2F /* LandingScreenViewController.swift in Sources */,
 				17A02F0D1AD9CB3400D13B2F /* HickeryUser.swift in Sources */,
 				17A02F0F1AD9D10100D13B2F /* FacebookAPIManager.swift in Sources */,
+				17A02F151ADAA93A00D13B2F /* HickerySongCell.swift in Sources */,
 				17A02F061AD9BE2800D13B2F /* HickeryAPI.swift in Sources */,
 				177D6EE71AD5F2D40002CC42 /* SecondViewController.swift in Sources */,
+				17A02F111ADAA53600D13B2F /* PlaylistViewController.swift in Sources */,
 				17A02F091AD9BF1A00D13B2F /* HickerySong.swift in Sources */,
 				177D6EE31AD5F2D40002CC42 /* AppDelegate.swift in Sources */,
 				177D6EE51AD5F2D40002CC42 /* HomeScreenViewController.swift in Sources */,

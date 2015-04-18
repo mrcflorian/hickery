@@ -12,6 +12,12 @@ import UIKit
 class SongTableViewController: NLFNucleusTableViewController
 {
     var songsArray: Array<HickerySong>?
+    var rowAdapter = SongRowAdapter()
+
+    override init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.use(rowAdapter, classRef: HickerySong.self)
+    }
 
     var songs: Array<HickerySong>?
     {
@@ -29,20 +35,6 @@ class SongTableViewController: NLFNucleusTableViewController
         self.tableView.reloadData()
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
-    {
-        let reuseIndentifier = "hickery.song.cell.identifier"
-        var cell = tableView.dequeueReusableCellWithIdentifier(reuseIndentifier) as HickerySongCell?
-        if cell == nil {
-            cell = HickerySongCell(style: UITableViewCellStyle.Default, reuseIdentifier: reuseIndentifier)
-        }
-        if (songsArray != nil) {
-            cell?.textLabel!.text = (songsArray![indexPath.row] as HickerySong).title
-        }
-        
-        return cell!
-    }
-    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         if (songsArray != nil) {
@@ -51,13 +43,15 @@ class SongTableViewController: NLFNucleusTableViewController
         return 0
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat
-    {
-        return 51
-    }
-    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
         return 1
+    }
+
+    override func objects() -> [AnyObject] {
+        if (songsArray == nil) {
+            return []
+        }
+        return songsArray!
     }
 }

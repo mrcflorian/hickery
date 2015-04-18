@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -105,14 +106,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gj4-cs-uya">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gj4-cs-uya">
+                                <rect key="frame" x="0.0" y="177" width="600" height="368"/>
                                 <connections>
                                     <segue destination="ZfA-eV-Cai" kind="embed" identifier="embedSongTableVC" id="yXB-oy-qaO"/>
                                 </connections>
                             </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uab-5k-KU8">
+                                <rect key="frame" x="16" y="15" width="240" height="128"/>
+                                <connections>
+                                    <segue destination="hNz-2N-kbL" kind="embed" identifier="embedYoutubePlayerVC" id="fiK-J5-8kH"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wjh-IL-ZQX" firstAttribute="top" secondItem="Gj4-cs-uya" secondAttribute="bottom" constant="55" id="7UX-Yi-DS8"/>
+                            <constraint firstAttribute="width" secondItem="Gj4-cs-uya" secondAttribute="width" id="DAk-xV-Xnb"/>
+                            <constraint firstAttribute="centerX" secondItem="Gj4-cs-uya" secondAttribute="centerX" id="XXi-MJ-yTE"/>
+                            <constraint firstItem="Gj4-cs-uya" firstAttribute="top" secondItem="oIJ-RQ-3He" secondAttribute="bottom" constant="177" id="vbm-uI-1yL"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <connections>
@@ -121,48 +134,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Bx-We-HlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1429" y="591"/>
+            <point key="canvasLocation" x="1469" y="801"/>
         </scene>
         <!--Song Table View Controller-->
         <scene sceneID="LgP-oq-HIy">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="ZfA-eV-Cai" customClass="SongTableViewController" customModule="Hickery" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="H5H-CW-xM0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="H5H-CW-xM0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="368"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="hickery.song.cell.identifier" rowHeight="60" id="B4s-ry-CWY" customClass="HickerySongCell" customModule="Hickery" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="hickery.song.cell.identifier" rowHeight="80" id="B4s-ry-CWY" customClass="HickerySongCell" customModule="Hickery" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B4s-ry-CWY" id="dki-Vn-p1g">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="B4s-ry-CWY" id="dki-Vn-p1g">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ANl-M7-fRM">
-                                            <rect key="frame" x="20" y="6" width="64" height="48"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ANl-M7-fRM" customClass="NLFDownloadableImageView" customModule="NucleusFramework">
+                                            <rect key="frame" x="20" y="15" width="48" height="48"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="48" id="66j-vJ-dkx"/>
-                                                <constraint firstAttribute="width" constant="64" id="fz3-RT-M1y"/>
+                                                <constraint firstAttribute="width" constant="48" id="ddf-QX-y87"/>
+                                                <constraint firstAttribute="height" constant="48" id="lYW-oL-gkc"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6E-xb-adR">
-                                            <rect key="frame" x="92" y="15" width="488" height="30"/>
+                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64Y-Kq-9hC">
+                                            <rect key="frame" x="73" y="13" width="300" height="53"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="488" id="DAN-y5-ut8"/>
-                                                <constraint firstAttribute="height" constant="30" id="e8R-BB-DLb"/>
+                                                <constraint firstAttribute="width" constant="300" id="eqT-A6-wJn"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        </textView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="centerY" secondItem="p6E-xb-adR" secondAttribute="centerY" id="3fM-BW-B2t"/>
-                                        <constraint firstItem="p6E-xb-adR" firstAttribute="leading" secondItem="ANl-M7-fRM" secondAttribute="trailing" constant="8" symbolic="YES" id="Ijp-aE-kxV"/>
-                                        <constraint firstItem="p6E-xb-adR" firstAttribute="leading" secondItem="ANl-M7-fRM" secondAttribute="trailing" constant="8" id="e2Z-cx-YFR"/>
-                                        <constraint firstAttribute="centerY" secondItem="ANl-M7-fRM" secondAttribute="centerY" id="oeo-nB-V9Q"/>
-                                        <constraint firstItem="ANl-M7-fRM" firstAttribute="leading" secondItem="dki-Vn-p1g" secondAttribute="leading" constant="20" symbolic="YES" id="tlj-dp-olY"/>
+                                        <constraint firstAttribute="centerY" secondItem="64Y-Kq-9hC" secondAttribute="centerY" id="BAR-qR-ddn"/>
+                                        <constraint firstItem="64Y-Kq-9hC" firstAttribute="leading" secondItem="ANl-M7-fRM" secondAttribute="trailing" constant="5" id="DbO-Gq-KCf"/>
+                                        <constraint firstAttribute="centerY" secondItem="ANl-M7-fRM" secondAttribute="centerY" id="IfA-R2-NdG"/>
+                                        <constraint firstItem="64Y-Kq-9hC" firstAttribute="top" secondItem="dki-Vn-p1g" secondAttribute="topMargin" constant="5" id="LBJ-cn-pEj"/>
+                                        <constraint firstItem="ANl-M7-fRM" firstAttribute="leading" secondItem="dki-Vn-p1g" secondAttribute="leadingMargin" constant="12" id="o6J-yz-H7P"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="songImageView" destination="ANl-M7-fRM" id="6MU-no-T9t"/>
+                                    <outlet property="songTextView" destination="64Y-Kq-9hC" id="Z4k-vK-RRK"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
@@ -170,7 +187,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RR6-B3-7wb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2150" y="1042"/>
+            <point key="canvasLocation" x="2263" y="1051"/>
+        </scene>
+        <!--Youtube Player View Controller-->
+        <scene sceneID="MAw-o7-ufD">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="hNz-2N-kbL" customClass="NLFYoutubePlayerViewController" customModule="NucleusFramework" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Aud-5v-zcF"/>
+                        <viewControllerLayoutGuide type="bottom" id="ikf-0k-Drq"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="E45-vU-aJT">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uw0-0a-fuE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1509" y="248"/>
         </scene>
     </scenes>
     <resources>

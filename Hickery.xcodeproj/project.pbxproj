@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1772A73F1AE2F358005CA785 /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 1772A73E1AE2F358005CA785 /* YTPlayerView-iframe-player.html */; };
 		177D6EE31AD5F2D40002CC42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D6EE21AD5F2D40002CC42 /* AppDelegate.swift */; };
 		177D6EE51AD5F2D40002CC42 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D6EE41AD5F2D40002CC42 /* HomeScreenViewController.swift */; };
 		177D6EE71AD5F2D40002CC42 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D6EE61AD5F2D40002CC42 /* SecondViewController.swift */; };
@@ -33,6 +34,7 @@
 		17A02F111ADAA53600D13B2F /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02F101ADAA53600D13B2F /* PlaylistViewController.swift */; };
 		17A02F131ADAA67300D13B2F /* SongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02F121ADAA67300D13B2F /* SongTableViewController.swift */; };
 		17A02F151ADAA93A00D13B2F /* HickerySongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A02F141ADAA93A00D13B2F /* HickerySongCell.swift */; };
+		17A0C8031ADB1631002F5AF8 /* SongRowAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A0C8021ADB1631002F5AF8 /* SongRowAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1772A73E1AE2F358005CA785 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
 		177D6EDD1AD5F2D40002CC42 /* Hickery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hickery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177D6EE11AD5F2D40002CC42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		177D6EE21AD5F2D40002CC42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 		17A02F101ADAA53600D13B2F /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		17A02F121ADAA67300D13B2F /* SongTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongTableViewController.swift; sourceTree = "<group>"; };
 		17A02F141ADAA93A00D13B2F /* HickerySongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HickerySongCell.swift; sourceTree = "<group>"; };
+		17A0C8021ADB1631002F5AF8 /* SongRowAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongRowAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,11 +157,12 @@
 				177D6EED1AD5F2D40002CC42 /* LaunchScreen.xib */,
 				177D6EE01AD5F2D40002CC42 /* Supporting Files */,
 				177D6F141AD5F3CF0002CC42 /* BridgingHeader.h */,
-				17A02EE41AD9AAF600D13B2F /* HickeryLanding.storyboard */,
 				17A02F0A1AD9C5EC00D13B2F /* LandingScreenViewController.swift */,
 				17A02F101ADAA53600D13B2F /* PlaylistViewController.swift */,
 				17A02F121ADAA67300D13B2F /* SongTableViewController.swift */,
 				17A02F141ADAA93A00D13B2F /* HickerySongCell.swift */,
+				17A0C8021ADB1631002F5AF8 /* SongRowAdapter.swift */,
+				17A02EE41AD9AAF600D13B2F /* HickeryLanding.storyboard */,
 			);
 			path = Hickery;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 		177D6EE01AD5F2D40002CC42 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1772A73E1AE2F358005CA785 /* YTPlayerView-iframe-player.html */,
 				177D6EE11AD5F2D40002CC42 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -322,6 +328,7 @@
 				177D6EEF1AD5F2D40002CC42 /* LaunchScreen.xib in Resources */,
 				17A02EE51AD9AAF600D13B2F /* HickeryLanding.storyboard in Resources */,
 				177D6EEC1AD5F2D40002CC42 /* Images.xcassets in Resources */,
+				1772A73F1AE2F358005CA785 /* YTPlayerView-iframe-player.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +349,7 @@
 				17A02F131ADAA67300D13B2F /* SongTableViewController.swift in Sources */,
 				17A02F0B1AD9C5EC00D13B2F /* LandingScreenViewController.swift in Sources */,
 				17A02F0D1AD9CB3400D13B2F /* HickeryUser.swift in Sources */,
+				17A0C8031ADB1631002F5AF8 /* SongRowAdapter.swift in Sources */,
 				17A02F0F1AD9D10100D13B2F /* FacebookAPIManager.swift in Sources */,
 				17A02F151ADAA93A00D13B2F /* HickerySongCell.swift in Sources */,
 				17A02F061AD9BE2800D13B2F /* HickeryAPI.swift in Sources */,

@@ -26,7 +26,9 @@ class HickerySongCell: UITableViewCell
     
     override func awakeFromNib()
     {
-        self.songImageView?.clipsToBounds = true
-        self.songImageView?.layer.cornerRadius = kSongImageCornerRadius
+        dispatch_async(dispatch_get_main_queue()) {
+            self.songImageView?.clipsToBounds = true
+            self.songImageView?.layer.cornerRadius = kSongImageCornerRadius
+        }
     }
 }

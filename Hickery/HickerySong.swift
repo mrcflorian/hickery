@@ -24,4 +24,17 @@ class HickerySong: NSObject
         categoryID = jsonDictionary["category_id"] as String
         subcategoryID = jsonDictionary["subcategory_id"] as String
     }
+
+    func youtubeVideoID() -> String
+    {
+        var query = self.content.componentsSeparatedByString("?")[1]
+        var pairs = query.componentsSeparatedByString("&")
+        for pair in pairs {
+            var kv = pair.componentsSeparatedByString("=")
+            if (kv[0] == "v") {
+                return kv[1]
+            }
+        }
+        return ""
+    }
 }

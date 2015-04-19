@@ -22,10 +22,11 @@ class SongRowAdapter: NLFTableRowAdapterProtocol
         if cell == nil {
             cell = HickerySongCell(reuseIdentifier: reuseIdentifier)
         }
-        cell?.songTextView!.text = hickerySong.title
-        cell?.songTextView?.sizeToFit()
-
-        cell?.songImageView?.URLString = hickerySong.photoURL
+        dispatch_async(dispatch_get_main_queue()) {
+            cell?.songTextView?.text = hickerySong.title
+            cell?.songTextView?.sizeToFit()
+            cell?.songImageView?.URLString = hickerySong.photoURL
+        }
         return cell!
     }
 }

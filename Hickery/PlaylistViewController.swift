@@ -16,13 +16,9 @@ class PlaylistViewController: NLFNucleusViewController {
 
     override init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "youtubePlayerViewDidAppear", name: kYoutubePlayerViewDidAppear, object: nil)
     }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        self.youtubePlayerVC?.playYoutubeVideo("zPP6lXaL7KA")
-    }
-    
+
     var songs: Array<HickerySong>?
         {
         set {
@@ -38,6 +34,14 @@ class PlaylistViewController: NLFNucleusViewController {
             self.songTableVC = segue.destinationViewController as? SongTableViewController
         } else if (segue.identifier == "embedYoutubePlayerVC") {
             self.youtubePlayerVC = segue.destinationViewController as? NLFYoutubePlayerViewController
+        }
+    }
+
+    func youtubePlayerViewDidAppear()
+    {
+        var firstSong = self.songs?[0]
+        if (firstSong != nil) {
+            self.youtubePlayerVC?.playYoutubeVideo(firstSong!.youtubeVideoID())
         }
     }
 }

@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Ad-V5-bjf">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ad-V5-bjf">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <connections>
                                     <segue destination="rlL-T4-WBu" kind="embed" identifier="embedPlaylistVC" id="fO9-LU-Zqz"/>
@@ -25,6 +25,12 @@
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Ad-V5-bjf" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="URi-8N-XfN"/>
+                            <constraint firstItem="8Ad-V5-bjf" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="Udz-ow-lcj"/>
+                            <constraint firstAttribute="centerX" secondItem="8Ad-V5-bjf" secondAttribute="centerX" id="qCO-K2-O95"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="8Ad-V5-bjf" secondAttribute="bottom" id="w3g-Ib-k4T"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
                     <connections>
@@ -113,7 +119,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-578" y="464"/>
+            <point key="canvasLocation" x="-554" y="500"/>
         </scene>
         <!--Playlist View Controller-->
         <scene sceneID="yhr-54-sAa">
@@ -128,13 +134,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gj4-cs-uya">
-                                <rect key="frame" x="0.0" y="177" width="600" height="255"/>
+                                <rect key="frame" x="0.0" y="153" width="600" height="334"/>
                                 <connections>
                                     <segue destination="ZfA-eV-Cai" kind="embed" identifier="embedSongTableVC" id="yXB-oy-qaO"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uab-5k-KU8">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uab-5k-KU8">
                                 <rect key="frame" x="16" y="15" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="4WS-Rj-aAU"/>
+                                    <constraint firstAttribute="height" constant="128" id="jry-1n-0zz"/>
+                                </constraints>
                                 <connections>
                                     <segue destination="hNz-2N-kbL" kind="embed" identifier="embedYoutubePlayerVC" id="fiK-J5-8kH"/>
                                 </connections>
@@ -142,10 +152,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Wjh-IL-ZQX" firstAttribute="top" secondItem="Gj4-cs-uya" secondAttribute="bottom" constant="55" id="7UX-Yi-DS8"/>
+                            <constraint firstItem="Wjh-IL-ZQX" firstAttribute="top" secondItem="Gj4-cs-uya" secondAttribute="bottom" id="7UX-Yi-DS8"/>
+                            <constraint firstItem="uab-5k-KU8" firstAttribute="leading" secondItem="JcG-sJ-bdi" secondAttribute="leadingMargin" id="BhS-0v-RMJ"/>
                             <constraint firstAttribute="width" secondItem="Gj4-cs-uya" secondAttribute="width" id="DAk-xV-Xnb"/>
+                            <constraint firstItem="Gj4-cs-uya" firstAttribute="top" secondItem="uab-5k-KU8" secondAttribute="bottom" constant="10" id="Ubh-Lq-mMc"/>
                             <constraint firstAttribute="centerX" secondItem="Gj4-cs-uya" secondAttribute="centerX" id="XXi-MJ-yTE"/>
-                            <constraint firstItem="Gj4-cs-uya" firstAttribute="top" secondItem="oIJ-RQ-3He" secondAttribute="bottom" constant="177" id="vbm-uI-1yL"/>
+                            <constraint firstItem="uab-5k-KU8" firstAttribute="top" secondItem="oIJ-RQ-3He" secondAttribute="bottom" constant="15" id="mI2-Eg-lc0"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -155,14 +167,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Bx-We-HlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1469" y="801"/>
+            <point key="canvasLocation" x="1469" y="800.5"/>
         </scene>
         <!--Song Table View Controller-->
         <scene sceneID="LgP-oq-HIy">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="ZfA-eV-Cai" customClass="SongTableViewController" customModule="Hickery" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="H5H-CW-xM0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="255"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="H5H-CW-xM0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="334"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -204,6 +216,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RR6-B3-7wb" userLabel="First Responder" sceneMemberID="firstResponder"/>

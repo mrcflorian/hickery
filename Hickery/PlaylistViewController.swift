@@ -14,7 +14,7 @@ class PlaylistViewController: NLFNucleusViewController {
     var youtubePlayerVC: NLFYoutubePlayerViewController?
     var songTableVC: SongTableViewController?
 
-    override init(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "youtubePlayerViewDidAppear", name: kYoutubePlayerViewDidAppear, object: nil)
     }

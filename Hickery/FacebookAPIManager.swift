@@ -17,7 +17,7 @@ class FacebookAPIManager: NSObject {
             if ((error) != nil) {
                 println("Error: \(error)")
             } else {
-                NSNotificationCenter.defaultCenter().postNotificationName(kFacebookManagerDidFetchUserNotification, object:result.valueForKey("email") as NSString)
+                NSNotificationCenter.defaultCenter().postNotificationName(kFacebookManagerDidFetchUserNotification, object:result.valueForKey("email") as! NSString)
             }
         })
     }

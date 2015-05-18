@@ -21,22 +21,22 @@ class HickeryUser: NSObject {
     init(jsonDictionary: NSDictionary)
     {
         if (jsonDictionary["hkid"] != nil) {
-            userID = jsonDictionary["hkid"] as String
+            userID = jsonDictionary["hkid"] as! String
         }
         if (jsonDictionary["profile_picture"] != nil) {
-            profileImageURL = jsonDictionary["profile_picture"] as String
+            profileImageURL = jsonDictionary["profile_picture"] as! String
         }
         if (jsonDictionary["first_name"] != nil) {
-            firstName = jsonDictionary["first_name"] as String
+            firstName = jsonDictionary["first_name"] as! String
         }
         if (jsonDictionary["last_name"] != nil) {
-            lastName = jsonDictionary["last_name"] as String
+            lastName = jsonDictionary["last_name"] as! String
         }
     }
     
     class func hickeryID(facebookID: String!) -> String
     {
-        var repeatNo = 15 - countElements(facebookID)
+        var repeatNo = 15 - count(facebookID)
         if repeatNo < 0 {
             repeatNo = 0
         }

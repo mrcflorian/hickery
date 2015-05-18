@@ -15,10 +15,10 @@ class SongRowAdapter: NLFTableRowAdapterProtocol
         if !object.isKindOfClass(HickerySong) {
             return UITableViewCell()
         }
-        let hickerySong = object as HickerySong
+        let hickerySong = object as! HickerySong
         let reuseIdentifier = "hickery.song.cell.identifier"
         
-        var cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier) as HickerySongCell?
+        var cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier) as! HickerySongCell?
         if cell == nil {
             cell = HickerySongCell(reuseIdentifier: reuseIdentifier)
         }

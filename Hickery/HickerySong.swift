@@ -17,12 +17,12 @@ class HickerySong: NSObject
 
     init(jsonDictionary: NSDictionary)
     {
-        songID = jsonDictionary["hkid"] as String
-        photoURL = jsonDictionary["photo"] as String
-        title = jsonDictionary["title"] as String
-        content = jsonDictionary["content"] as String
-        categoryID = jsonDictionary["category_id"] as String
-        subcategoryID = jsonDictionary["subcategory_id"] as String
+        songID = jsonDictionary["hkid"] as! String
+        photoURL = jsonDictionary["photo"] as! String
+        title = jsonDictionary["title"] as! String
+        content = jsonDictionary["content"] as! String
+        categoryID = jsonDictionary["category_id"] as! String
+        subcategoryID = jsonDictionary["subcategory_id"] as! String
     }
 
     func youtubeVideoID() -> String

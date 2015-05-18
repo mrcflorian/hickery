@@ -14,7 +14,7 @@ class SongTableViewController: NLFNucleusTableViewController
     var songsArray: Array<HickerySong>?
     var rowAdapter = SongRowAdapter()
 
-    override init(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.use(rowAdapter, classRef: HickerySong.self)
     }

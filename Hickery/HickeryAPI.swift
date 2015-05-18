@@ -16,7 +16,7 @@ class HickeryAPI: NSObject {
         NLFNucleusAPI.request(request) {(data, response, error) in
             if completionHandler != nil {
                 var songsList = Array<HickerySong>()
-                var likesArray = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as Array<NSDictionary>
+                var likesArray = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! Array<NSDictionary>
                 for jsonDictionary in likesArray {
                     songsList.append(HickerySong(jsonDictionary: jsonDictionary))
                 }
@@ -32,7 +32,7 @@ class HickeryAPI: NSObject {
         NLFNucleusAPI.request(request) {(data, response, error) in
             if (completionHandler != nil) {
                 var songsList = Array<HickerySong>()
-                var jsonDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
+                var jsonDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
                 completionHandler!(HickeryUser(jsonDictionary: jsonDictionary))
             }
         }

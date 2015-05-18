@@ -14,7 +14,7 @@ class HomeScreenViewController: NLFNucleusViewController {
     
     var playlistVC: PlaylistViewController?
 
-    override init(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "didFetchFacebookUser:", name: kFacebookManagerDidFetchUserNotification, object: nil)
         FacebookAPIManager.startFetchingDataForCurrentUser()
@@ -27,7 +27,7 @@ class HomeScreenViewController: NLFNucleusViewController {
     
     func didFetchFacebookUser(notification: NSNotification)
     {
-        HickeryAPI.requestUser(notification.object as String, completionHandler: { (user) -> Void in
+        HickeryAPI.requestUser(notification.object as! String, completionHandler: { (user) -> Void in
             HickeryAPI.requestLikes(user.userID, completionHandler: { (songsList) -> Void in
                 if self.playlistVC != nil {
                     self.playlistVC!.songs = songsList;

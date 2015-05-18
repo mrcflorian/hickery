@@ -43,7 +43,7 @@ class LandingScreenViewController: NLFNucleusViewController
     func goToHomeScreen()
     {
         let storyboard = UIStoryboard(name:"HickeryMain", bundle:nil)
-        let viewController = storyboard.instantiateInitialViewController() as UIViewController
+        let viewController = storyboard.instantiateInitialViewController() as! UIViewController
         self.presentViewController(viewController, animated:true, completion:nil)
     }
 }

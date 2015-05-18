@@ -12,6 +12,8 @@
 	<dict>
 		<key>C4E051C8391A73C10A8A2E0A5C54B818253CCDC0</key>
 		<string>https://github.com/mrcflorian/hickery.git</string>
+		<key>E0937AAA9A29EF633240C7E680F93373DE8F7DB2</key>
+		<string>https://github.com/mrcflorian/nucleus.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Hickery.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>C4E051C8391A73C10A8A2E0A5C54B818253CCDC0</key>
 		<string>../..</string>
+		<key>E0937AAA9A29EF633240C7E680F93373DE8F7DB2</key>
+		<string>../../../Nucleus</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/mrcflorian/hickery.git</string>
@@ -35,6 +39,14 @@
 			<string>C4E051C8391A73C10A8A2E0A5C54B818253CCDC0</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Hickery</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E0937AAA9A29EF633240C7E680F93373DE8F7DB2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Nucleus</string>
 		</dict>
 	</array>
 </dict>
